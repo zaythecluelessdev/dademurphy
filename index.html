@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dade Murphy - Zero Cool</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Welcome to Zero Cool's Playground</h1>
+        <p class="animated-text">System Breach Detected... Access Granted.</p>
+    </header>
+    <main>
+        <section id="about">
+            <h2>About Me</h2>
+            <p>
+                Name: Dade Murphy<br>
+                Alias: Zero Cool<br>
+                Occupation: Elite Hacker<br>
+                Known For: Crashing 1,507 Systems at Age 11.<br>
+                Passion: Breaking barriers and rewriting the rules of cyberspace.
+            </p>
+            <img src="dade murphy.jpg" alt="Dade Murphy Avatar" class="avatar">
+        </section>
+        <section id="skills">
+            <h2>Skills</h2>
+            <pre>
+> cat skills.txt
+- Network Exploitation
+- Cryptography
+- Social Engineering
+- System Breaches
+- Phreaking
+            </pre>
+        </section>
+        <section id="projects">
+            <h2>Projects</h2>
+            <div class="project">
+                <h3>Gibson Infiltration</h3>
+                <p>The ultimate hack that changed the world.</p>
+            </div>
+            <div class="project">
+                <h3>The Plague Showdown</h3>
+                <p>Outsmarting corporate greed.</p>
+            </div>
+        </section>
+        <section id="contact">
+            <h2>Contact</h2>
+            <pre>
+echo "Reach out to Zero Cool"
+> email: zerocool@hacktheplanet.net
+> message: ./contact-form.sh
+            </pre>
+        </section>
+    </main>
+    <footer>
+        <p>Hack the Planet!</p>
+        
+    </footer>
+    <script>
+        let userInput = ""; // Variable to store the typed input
+        const secretCode = "hacktheplanet"; // The secret code
+    
+        document.addEventListener('keydown', (e) => {
+            // Append the current key to userInput
+            userInput += e.key.toLowerCase();
+    
+            // Trim userInput to the length of the secret code
+            if (userInput.length > secretCode.length) {
+                userInput = userInput.slice(-secretCode.length);
+            }
+    
+            // Check if the userInput matches the secret code
+            if (userInput === secretCode) {
+                alert("You unlocked the Hacker Manifesto!");
+                window.location.href = "manifesto.html"; // Redirect to a hidden page
+            }
+        });
+    </script>
+    
+    
+</body>
+</html>

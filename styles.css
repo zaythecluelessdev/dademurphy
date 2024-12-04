@@ -1,0 +1,82 @@
+/* styles.css */
+body {
+    background-color: #000000;
+    color: #39ff14;
+    font-family: "Courier New", Courier, monospace;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+header {
+    padding: 20px;
+    border-bottom: 2px solid #39ff14;
+}
+
+header h1 {
+    font-family: "OCR A Std", monospace;
+    color: #FFFFFF;
+    margin: 0;
+}
+
+.animated-text {
+    color: #39ff14;
+    animation: blink 1s steps(2, start) infinite;
+}
+
+@keyframes blink {
+    50% {
+        opacity: 0;
+    }
+}
+
+main {
+    padding: 20px;
+}
+
+section {
+    margin: 20px 0;
+    border: 2px solid #39ff14;
+    padding: 10px;
+}
+
+.avatar {
+    margin-top: 10px;
+    max-width: 150px;
+    border: 2px solid #007FFF;
+    border-radius: 50%;
+}
+
+#skills pre {
+    text-align: left;
+    margin: auto;
+    display: inline-block;
+    background-color: #000000;
+    color: #39ff14;
+    padding: 10px;
+    border: 2px solid #39ff14;
+}
+
+.project {
+    margin: 10px 0;
+    padding: 10px;
+    background-color: #007FFF;
+    color: #FFFFFF;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+.project:hover {
+    background-color: #FF0000;
+    color: #000000;
+    transform: scale(1.05);
+}
+
+footer {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #000000;
+    color: #007FFF;
+    font-family: "OCR A Std", monospace;
+}
